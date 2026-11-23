@@ -1,0 +1,1079 @@
+{
+  "environment": {
+    "python": "3.11.8",
+    "packages": {
+      "beautifulsoup4": "4.14.3",
+      "markdown-it-py": "4.0.0",
+      "python-hwpx": "7.0.0",
+      "lxml": "6.1.3"
+    },
+    "files": {
+      "$PYTHON/python.exe": "01fd1819096d112696bd2152068c1195c9bd4f57b6ab776eddd98d66d44b8259",
+      "$NODE/node.exe": "3331e1ffe19874215472217c5e94f5a0c6d8e18c4ac7111d3937aa0ad5e9b4a5",
+      "$TOOLS/unhwp/unhwp.exe": "204fec24e20b2f1a51a0cd40fecb53d7c18fcd54a74e76fcbb0ad9cc78e52abe",
+      "$TOOLS/ffi/unhwp.dll": "eac176371903f673073e34797f3be66608de805624dfae9b3479c3ebc99bfb5f",
+      "$TOOLS/unhwp-table-target/release/unhwp.dll": "33b6bd18a824a4ca83732d1b3216150842e6c821ff29a55b197af53325139290",
+      "$TOOLS/hwp2md-target/release/hwp2md.exe": "487bba0558f8fdd01ee48274bc386ff6771d90fa994a7148d74e2f1629ff7f7d",
+      "$TOOLS/node_modules/kordoc/dist/cli.js": "7d5cdc8d175a141a13a2317431443610625746d17d4e3553e5ea190d3f31ee5b",
+      "$BENCH/dll_batch.py": "0feb8591d0b9a9109e2b737d4820e608aa086f6b6000d9ed8a6dcddbb74b19cf",
+      "$BENCH/public_benchmark.py": "1e37b32fe0860241c68c81149016e042a749dac959e75ca7ab50a074b667597b",
+      "$BENCH/baseline.py": "896c968116443a1f989ad9ed774f42cbbafca4e73df2b974d4909e8e33a78611",
+      "$BENCH/table_audit.py": "4730a96b03a6cc939a4dccc92ad3be2d6718fead264c0780f71fe7db23cc7a13",
+      "$BENCH/audit-2026-11-23/measure.py": "836648e2bd4704caf4e2fac74bf05096e6a2fece9cb5e2415dbaaf2760c4e0ce"
+    },
+    "os_family": "Windows"
+  },
+  "inputs": {
+    "appendix.hwp": "3b73cc510033920112cf96a01dbd6124e9707fc37b710bbd5608df2d513dcce0",
+    "release.hwpx": "93ffd8fbe0a8bcdc5b96cbf9615c4cbb3e614980befccbca2642d2925441a207"
+  },
+  "history": {
+    "2026-11-23-public-isolated": {
+      "sha256": "f3881dd6835669fd9fef858c3a3eb42a42bd65465935f58370d6fe2bbaefd5ca",
+      "tool_hashes": {
+        "ffi/unhwp.dll": "eac176371903f673073e34797f3be66608de805624dfae9b3479c3ebc99bfb5f",
+        "unhwp/unhwp.exe": "204fec24e20b2f1a51a0cd40fecb53d7c18fcd54a74e76fcbb0ad9cc78e52abe",
+        "hwp2md-target/release/hwp2md.exe": "487bba0558f8fdd01ee48274bc386ff6771d90fa994a7148d74e2f1629ff7f7d",
+        "node_modules/kordoc/dist/cli.js": "7d5cdc8d175a141a13a2317431443610625746d17d4e3553e5ea190d3f31ee5b"
+      },
+      "order": {
+        "1": [
+          "unhwp",
+          "hwp2md",
+          "kordoc-4",
+          "dll-4",
+          "kordoc-html",
+          "dll-html",
+          "unhwp-html"
+        ],
+        "2": [
+          "hwp2md",
+          "kordoc-4",
+          "dll-4",
+          "kordoc-html",
+          "dll-html",
+          "unhwp-html",
+          "unhwp"
+        ],
+        "3": [
+          "kordoc-4",
+          "dll-4",
+          "kordoc-html",
+          "dll-html",
+          "unhwp-html",
+          "unhwp",
+          "hwp2md"
+        ],
+        "4": [
+          "dll-4",
+          "kordoc-html",
+          "dll-html",
+          "unhwp-html",
+          "unhwp",
+          "hwp2md",
+          "kordoc-4"
+        ],
+        "5": [
+          "kordoc-html",
+          "dll-html",
+          "unhwp-html",
+          "unhwp",
+          "hwp2md",
+          "kordoc-4",
+          "dll-4"
+        ]
+      },
+      "seconds": {
+        "unhwp": [
+          0.30606,
+          0.251431,
+          0.279882,
+          0.287599,
+          0.306669
+        ],
+        "hwp2md": [
+          0.160634,
+          0.174953,
+          0.168267,
+          0.188935,
+          0.191639
+        ],
+        "kordoc-4": [
+          4.576713,
+          4.12402,
+          4.377637,
+          4.961668,
+          6.071311
+        ],
+        "dll-4": [
+          0.654785,
+          0.656482,
+          0.721145,
+          0.641735,
+          0.676921
+        ],
+        "kordoc-html": [
+          4.555664,
+          4.113969,
+          4.795444,
+          4.694609,
+          4.61065
+        ],
+        "dll-html": [
+          0.653641,
+          0.631982,
+          0.674104,
+          0.712035,
+          0.665214
+        ],
+        "unhwp-html": [
+          0.277456,
+          0.253224,
+          0.271753,
+          0.293438,
+          0.254305
+        ]
+      },
+      "medians": {
+        "unhwp": 0.287599,
+        "hwp2md": 0.174953,
+        "kordoc-4": 4.576713,
+        "dll-4": 0.656482,
+        "kordoc-html": 4.61065,
+        "dll-html": 0.665214,
+        "unhwp-html": 0.271753
+      },
+      "output_hashes": {
+        "unhwp": [
+          [
+            "606c2dab1b3a5d121a0cba44f3a05a44638a63ee00fb4ec2c908ee891f76fd12",
+            "55c7e05f65a1e0f8544cdbbb5a9af34433bc1d03e28911b894b3e62da8288e97"
+          ]
+        ],
+        "hwp2md": [
+          [
+            "dce5184ca9b5b40e6a03af33e13468e94415f41144226fbb3173cd50b286c9d7",
+            "360be45c3dc736f124c8051b4bf9de876095beb76a9669a9b2b8c6bc73c2842c"
+          ]
+        ],
+        "kordoc-4": [
+          [
+            "7ee46fce49761c94c79724b03a493460bfac66dbaaa0a60179d245d30f2e760b",
+            "8b0b5266d2e8488430fd22de6de91b7bfebafe21af23ca0d4ec311f827dafba0"
+          ]
+        ],
+        "dll-4": [
+          [
+            "606c2dab1b3a5d121a0cba44f3a05a44638a63ee00fb4ec2c908ee891f76fd12",
+            "55c7e05f65a1e0f8544cdbbb5a9af34433bc1d03e28911b894b3e62da8288e97"
+          ]
+        ],
+        "kordoc-html": [
+          [
+            "1745199236853659546c5ca870d4dd047d4fe4c3e57576b82676bec6dba5ee43",
+            "85731a816d0cfec6e49dbfd975e7a7df80b4c979c5711d4c80ad6b91874e7687"
+          ]
+        ],
+        "dll-html": [
+          [
+            "bb80b56071b7c7f08a229ac50050f56a2f5e9dade4dd592148ddd43776cf9b9f",
+            "55c7e05f65a1e0f8544cdbbb5a9af34433bc1d03e28911b894b3e62da8288e97"
+          ]
+        ],
+        "unhwp-html": [
+          [
+            "bb80b56071b7c7f08a229ac50050f56a2f5e9dade4dd592148ddd43776cf9b9f",
+            "55c7e05f65a1e0f8544cdbbb5a9af34433bc1d03e28911b894b3e62da8288e97"
+          ]
+        ]
+      }
+    },
+    "2026-11-23-final-body": {
+      "sha256": "9cb695f7afeb4230a80bc86a85184c0bdd45d7abf71cccd27f50535f39b503ae",
+      "tool_hashes": {
+        "ffi/unhwp.dll": "eac176371903f673073e34797f3be66608de805624dfae9b3479c3ebc99bfb5f",
+        "unhwp/unhwp.exe": "204fec24e20b2f1a51a0cd40fecb53d7c18fcd54a74e76fcbb0ad9cc78e52abe",
+        "hwp2md-target/release/hwp2md.exe": "487bba0558f8fdd01ee48274bc386ff6771d90fa994a7148d74e2f1629ff7f7d",
+        "node_modules/kordoc/dist/cli.js": "7d5cdc8d175a141a13a2317431443610625746d17d4e3553e5ea190d3f31ee5b",
+        "patched unhwp.dll": "33b6bd18a824a4ca83732d1b3216150842e6c821ff29a55b197af53325139290"
+      },
+      "order": {
+        "1": [
+          "unhwp",
+          "hwp2md",
+          "kordoc-4",
+          "dll-4",
+          "kordoc-html",
+          "dll-html",
+          "unhwp-html",
+          "dll-preserve"
+        ],
+        "2": [
+          "hwp2md",
+          "kordoc-4",
+          "dll-4",
+          "kordoc-html",
+          "dll-html",
+          "unhwp-html",
+          "dll-preserve",
+          "unhwp"
+        ],
+        "3": [
+          "kordoc-4",
+          "dll-4",
+          "kordoc-html",
+          "dll-html",
+          "unhwp-html",
+          "dll-preserve",
+          "unhwp",
+          "hwp2md"
+        ],
+        "4": [
+          "dll-4",
+          "kordoc-html",
+          "dll-html",
+          "unhwp-html",
+          "dll-preserve",
+          "unhwp",
+          "hwp2md",
+          "kordoc-4"
+        ],
+        "5": [
+          "kordoc-html",
+          "dll-html",
+          "unhwp-html",
+          "dll-preserve",
+          "unhwp",
+          "hwp2md",
+          "kordoc-4",
+          "dll-4"
+        ]
+      },
+      "seconds": {
+        "unhwp": [
+          0.18448,
+          0.128304,
+          0.131971,
+          0.125006,
+          0.126559
+        ],
+        "hwp2md": [
+          0.08137,
+          0.078489,
+          0.07379,
+          0.067821,
+          0.072568
+        ],
+        "kordoc-4": [
+          2.391554,
+          2.212172,
+          2.18073,
+          1.966482,
+          1.967323
+        ],
+        "dll-4": [
+          0.324904,
+          0.295802,
+          0.297035,
+          0.294311,
+          0.265047
+        ],
+        "kordoc-html": [
+          2.22699,
+          2.000149,
+          2.436657,
+          2.10142,
+          1.868207
+        ],
+        "dll-html": [
+          0.338368,
+          0.26751,
+          0.305628,
+          0.293444,
+          0.282859
+        ],
+        "unhwp-html": [
+          0.150023,
+          0.124012,
+          0.148053,
+          0.126037,
+          0.123531
+        ],
+        "dll-preserve": [
+          0.304366,
+          0.267776,
+          0.300535,
+          0.27118,
+          0.264918
+        ]
+      },
+      "medians": {
+        "unhwp": 0.128304,
+        "hwp2md": 0.07379,
+        "kordoc-4": 2.18073,
+        "dll-4": 0.295802,
+        "kordoc-html": 2.10142,
+        "dll-html": 0.293444,
+        "unhwp-html": 0.126037,
+        "dll-preserve": 0.27118
+      },
+      "output_hashes": {
+        "unhwp": [
+          [
+            "606c2dab1b3a5d121a0cba44f3a05a44638a63ee00fb4ec2c908ee891f76fd12",
+            "55c7e05f65a1e0f8544cdbbb5a9af34433bc1d03e28911b894b3e62da8288e97"
+          ]
+        ],
+        "hwp2md": [
+          [
+            "dce5184ca9b5b40e6a03af33e13468e94415f41144226fbb3173cd50b286c9d7",
+            "360be45c3dc736f124c8051b4bf9de876095beb76a9669a9b2b8c6bc73c2842c"
+          ]
+        ],
+        "kordoc-4": [
+          [
+            "7ee46fce49761c94c79724b03a493460bfac66dbaaa0a60179d245d30f2e760b",
+            "8b0b5266d2e8488430fd22de6de91b7bfebafe21af23ca0d4ec311f827dafba0"
+          ]
+        ],
+        "dll-4": [
+          [
+            "606c2dab1b3a5d121a0cba44f3a05a44638a63ee00fb4ec2c908ee891f76fd12",
+            "55c7e05f65a1e0f8544cdbbb5a9af34433bc1d03e28911b894b3e62da8288e97"
+          ]
+        ],
+        "kordoc-html": [
+          [
+            "1745199236853659546c5ca870d4dd047d4fe4c3e57576b82676bec6dba5ee43",
+            "85731a816d0cfec6e49dbfd975e7a7df80b4c979c5711d4c80ad6b91874e7687"
+          ]
+        ],
+        "dll-html": [
+          [
+            "bb80b56071b7c7f08a229ac50050f56a2f5e9dade4dd592148ddd43776cf9b9f",
+            "55c7e05f65a1e0f8544cdbbb5a9af34433bc1d03e28911b894b3e62da8288e97"
+          ]
+        ],
+        "unhwp-html": [
+          [
+            "bb80b56071b7c7f08a229ac50050f56a2f5e9dade4dd592148ddd43776cf9b9f",
+            "55c7e05f65a1e0f8544cdbbb5a9af34433bc1d03e28911b894b3e62da8288e97"
+          ]
+        ],
+        "dll-preserve": [
+          [
+            "8586ba961b71689384de6a2cdeecba927d6dbf6ca7ac9bede9850fa019930680",
+            "57e723b880d262adb29d4c4d5ecb4ebc3b1984d3de23a0d91670e1bbeb40a6e5"
+          ]
+        ]
+      }
+    }
+  },
+  "runs": [
+    {
+      "round": 1,
+      "arm": "dll-html",
+      "elapsed_seconds": 0.5562138000004779,
+      "exit_codes": [
+        0
+      ],
+      "commands": [
+        [
+          "$PYTHON/python.exe",
+          "$BENCH/dll_batch.py",
+          "$TOOLS/ffi/unhwp.dll",
+          "$WORK/inputs",
+          "$WORK/time-1-dll-html",
+          "4",
+          "--merged-html"
+        ]
+      ],
+      "output_sha256": {
+        "appendix.hwp": "bb80b56071b7c7f08a229ac50050f56a2f5e9dade4dd592148ddd43776cf9b9f",
+        "release.hwpx": "55c7e05f65a1e0f8544cdbbb5a9af34433bc1d03e28911b894b3e62da8288e97"
+      }
+    },
+    {
+      "round": 1,
+      "arm": "dll-preserve",
+      "elapsed_seconds": 0.3580037000001539,
+      "exit_codes": [
+        0
+      ],
+      "commands": [
+        [
+          "$PYTHON/python.exe",
+          "$BENCH/dll_batch.py",
+          "$TOOLS/unhwp-table-target/release/unhwp.dll",
+          "$WORK/inputs",
+          "$WORK/time-1-dll-preserve",
+          "4",
+          "--preserve-tables"
+        ]
+      ],
+      "output_sha256": {
+        "appendix.hwp": "8586ba961b71689384de6a2cdeecba927d6dbf6ca7ac9bede9850fa019930680",
+        "release.hwpx": "57e723b880d262adb29d4c4d5ecb4ebc3b1984d3de23a0d91670e1bbeb40a6e5"
+      }
+    },
+    {
+      "round": 1,
+      "arm": "unhwp",
+      "elapsed_seconds": 0.18675050000001647,
+      "exit_codes": [
+        0,
+        0
+      ],
+      "commands": [
+        [
+          "$TOOLS/unhwp/unhwp.exe",
+          "markdown",
+          "--no-update-check",
+          "--cleanup",
+          "none",
+          "appendix.hwp",
+          "-o",
+          "$WORK/time-1-unhwp/appendix.hwp.md"
+        ],
+        [
+          "$TOOLS/unhwp/unhwp.exe",
+          "markdown",
+          "--no-update-check",
+          "--cleanup",
+          "none",
+          "release.hwpx",
+          "-o",
+          "$WORK/time-1-unhwp/release.hwpx.md"
+        ]
+      ],
+      "output_sha256": {
+        "appendix.hwp": "606c2dab1b3a5d121a0cba44f3a05a44638a63ee00fb4ec2c908ee891f76fd12",
+        "release.hwpx": "55c7e05f65a1e0f8544cdbbb5a9af34433bc1d03e28911b894b3e62da8288e97"
+      }
+    },
+    {
+      "round": 1,
+      "arm": "unhwp-html",
+      "elapsed_seconds": 0.16310410000005504,
+      "exit_codes": [
+        0,
+        0
+      ],
+      "commands": [
+        [
+          "$TOOLS/unhwp/unhwp.exe",
+          "markdown",
+          "--table-mode",
+          "html",
+          "--no-update-check",
+          "--cleanup",
+          "none",
+          "appendix.hwp",
+          "-o",
+          "$WORK/time-1-unhwp-html/appendix.hwp.md"
+        ],
+        [
+          "$TOOLS/unhwp/unhwp.exe",
+          "markdown",
+          "--table-mode",
+          "html",
+          "--no-update-check",
+          "--cleanup",
+          "none",
+          "release.hwpx",
+          "-o",
+          "$WORK/time-1-unhwp-html/release.hwpx.md"
+        ]
+      ],
+      "output_sha256": {
+        "appendix.hwp": "bb80b56071b7c7f08a229ac50050f56a2f5e9dade4dd592148ddd43776cf9b9f",
+        "release.hwpx": "55c7e05f65a1e0f8544cdbbb5a9af34433bc1d03e28911b894b3e62da8288e97"
+      }
+    },
+    {
+      "round": 1,
+      "arm": "hwp2md",
+      "elapsed_seconds": 0.2619207000007009,
+      "exit_codes": [
+        0
+      ],
+      "commands": [
+        [
+          "$TOOLS/hwp2md-target/release/hwp2md.exe",
+          "batch",
+          "$WORK/inputs",
+          "-o",
+          "$WORK/time-1-hwp2md"
+        ]
+      ],
+      "output_sha256": {
+        "appendix.hwp": "dce5184ca9b5b40e6a03af33e13468e94415f41144226fbb3173cd50b286c9d7",
+        "release.hwpx": "360be45c3dc736f124c8051b4bf9de876095beb76a9669a9b2b8c6bc73c2842c"
+      }
+    },
+    {
+      "round": 2,
+      "arm": "dll-preserve",
+      "elapsed_seconds": 0.4072868999992352,
+      "exit_codes": [
+        0
+      ],
+      "commands": [
+        [
+          "$PYTHON/python.exe",
+          "$BENCH/dll_batch.py",
+          "$TOOLS/unhwp-table-target/release/unhwp.dll",
+          "$WORK/inputs",
+          "$WORK/time-2-dll-preserve",
+          "4",
+          "--preserve-tables"
+        ]
+      ],
+      "output_sha256": {
+        "appendix.hwp": "8586ba961b71689384de6a2cdeecba927d6dbf6ca7ac9bede9850fa019930680",
+        "release.hwpx": "57e723b880d262adb29d4c4d5ecb4ebc3b1984d3de23a0d91670e1bbeb40a6e5"
+      }
+    },
+    {
+      "round": 2,
+      "arm": "unhwp",
+      "elapsed_seconds": 0.17020300000058342,
+      "exit_codes": [
+        0,
+        0
+      ],
+      "commands": [
+        [
+          "$TOOLS/unhwp/unhwp.exe",
+          "markdown",
+          "--no-update-check",
+          "--cleanup",
+          "none",
+          "appendix.hwp",
+          "-o",
+          "$WORK/time-2-unhwp/appendix.hwp.md"
+        ],
+        [
+          "$TOOLS/unhwp/unhwp.exe",
+          "markdown",
+          "--no-update-check",
+          "--cleanup",
+          "none",
+          "release.hwpx",
+          "-o",
+          "$WORK/time-2-unhwp/release.hwpx.md"
+        ]
+      ],
+      "output_sha256": {
+        "appendix.hwp": "606c2dab1b3a5d121a0cba44f3a05a44638a63ee00fb4ec2c908ee891f76fd12",
+        "release.hwpx": "55c7e05f65a1e0f8544cdbbb5a9af34433bc1d03e28911b894b3e62da8288e97"
+      }
+    },
+    {
+      "round": 2,
+      "arm": "unhwp-html",
+      "elapsed_seconds": 0.16523460000007617,
+      "exit_codes": [
+        0,
+        0
+      ],
+      "commands": [
+        [
+          "$TOOLS/unhwp/unhwp.exe",
+          "markdown",
+          "--table-mode",
+          "html",
+          "--no-update-check",
+          "--cleanup",
+          "none",
+          "appendix.hwp",
+          "-o",
+          "$WORK/time-2-unhwp-html/appendix.hwp.md"
+        ],
+        [
+          "$TOOLS/unhwp/unhwp.exe",
+          "markdown",
+          "--table-mode",
+          "html",
+          "--no-update-check",
+          "--cleanup",
+          "none",
+          "release.hwpx",
+          "-o",
+          "$WORK/time-2-unhwp-html/release.hwpx.md"
+        ]
+      ],
+      "output_sha256": {
+        "appendix.hwp": "bb80b56071b7c7f08a229ac50050f56a2f5e9dade4dd592148ddd43776cf9b9f",
+        "release.hwpx": "55c7e05f65a1e0f8544cdbbb5a9af34433bc1d03e28911b894b3e62da8288e97"
+      }
+    },
+    {
+      "round": 2,
+      "arm": "hwp2md",
+      "elapsed_seconds": 0.0860170999994807,
+      "exit_codes": [
+        0
+      ],
+      "commands": [
+        [
+          "$TOOLS/hwp2md-target/release/hwp2md.exe",
+          "batch",
+          "$WORK/inputs",
+          "-o",
+          "$WORK/time-2-hwp2md"
+        ]
+      ],
+      "output_sha256": {
+        "appendix.hwp": "dce5184ca9b5b40e6a03af33e13468e94415f41144226fbb3173cd50b286c9d7",
+        "release.hwpx": "360be45c3dc736f124c8051b4bf9de876095beb76a9669a9b2b8c6bc73c2842c"
+      }
+    },
+    {
+      "round": 2,
+      "arm": "dll-html",
+      "elapsed_seconds": 0.40048060000026453,
+      "exit_codes": [
+        0
+      ],
+      "commands": [
+        [
+          "$PYTHON/python.exe",
+          "$BENCH/dll_batch.py",
+          "$TOOLS/ffi/unhwp.dll",
+          "$WORK/inputs",
+          "$WORK/time-2-dll-html",
+          "4",
+          "--merged-html"
+        ]
+      ],
+      "output_sha256": {
+        "appendix.hwp": "bb80b56071b7c7f08a229ac50050f56a2f5e9dade4dd592148ddd43776cf9b9f",
+        "release.hwpx": "55c7e05f65a1e0f8544cdbbb5a9af34433bc1d03e28911b894b3e62da8288e97"
+      }
+    },
+    {
+      "round": 3,
+      "arm": "unhwp",
+      "elapsed_seconds": 0.17180050000024494,
+      "exit_codes": [
+        0,
+        0
+      ],
+      "commands": [
+        [
+          "$TOOLS/unhwp/unhwp.exe",
+          "markdown",
+          "--no-update-check",
+          "--cleanup",
+          "none",
+          "appendix.hwp",
+          "-o",
+          "$WORK/time-3-unhwp/appendix.hwp.md"
+        ],
+        [
+          "$TOOLS/unhwp/unhwp.exe",
+          "markdown",
+          "--no-update-check",
+          "--cleanup",
+          "none",
+          "release.hwpx",
+          "-o",
+          "$WORK/time-3-unhwp/release.hwpx.md"
+        ]
+      ],
+      "output_sha256": {
+        "appendix.hwp": "606c2dab1b3a5d121a0cba44f3a05a44638a63ee00fb4ec2c908ee891f76fd12",
+        "release.hwpx": "55c7e05f65a1e0f8544cdbbb5a9af34433bc1d03e28911b894b3e62da8288e97"
+      }
+    },
+    {
+      "round": 3,
+      "arm": "unhwp-html",
+      "elapsed_seconds": 0.16927430000032473,
+      "exit_codes": [
+        0,
+        0
+      ],
+      "commands": [
+        [
+          "$TOOLS/unhwp/unhwp.exe",
+          "markdown",
+          "--table-mode",
+          "html",
+          "--no-update-check",
+          "--cleanup",
+          "none",
+          "appendix.hwp",
+          "-o",
+          "$WORK/time-3-unhwp-html/appendix.hwp.md"
+        ],
+        [
+          "$TOOLS/unhwp/unhwp.exe",
+          "markdown",
+          "--table-mode",
+          "html",
+          "--no-update-check",
+          "--cleanup",
+          "none",
+          "release.hwpx",
+          "-o",
+          "$WORK/time-3-unhwp-html/release.hwpx.md"
+        ]
+      ],
+      "output_sha256": {
+        "appendix.hwp": "bb80b56071b7c7f08a229ac50050f56a2f5e9dade4dd592148ddd43776cf9b9f",
+        "release.hwpx": "55c7e05f65a1e0f8544cdbbb5a9af34433bc1d03e28911b894b3e62da8288e97"
+      }
+    },
+    {
+      "round": 3,
+      "arm": "hwp2md",
+      "elapsed_seconds": 0.08389339999939693,
+      "exit_codes": [
+        0
+      ],
+      "commands": [
+        [
+          "$TOOLS/hwp2md-target/release/hwp2md.exe",
+          "batch",
+          "$WORK/inputs",
+          "-o",
+          "$WORK/time-3-hwp2md"
+        ]
+      ],
+      "output_sha256": {
+        "appendix.hwp": "dce5184ca9b5b40e6a03af33e13468e94415f41144226fbb3173cd50b286c9d7",
+        "release.hwpx": "360be45c3dc736f124c8051b4bf9de876095beb76a9669a9b2b8c6bc73c2842c"
+      }
+    },
+    {
+      "round": 3,
+      "arm": "dll-html",
+      "elapsed_seconds": 0.3697455000001355,
+      "exit_codes": [
+        0
+      ],
+      "commands": [
+        [
+          "$PYTHON/python.exe",
+          "$BENCH/dll_batch.py",
+          "$TOOLS/ffi/unhwp.dll",
+          "$WORK/inputs",
+          "$WORK/time-3-dll-html",
+          "4",
+          "--merged-html"
+        ]
+      ],
+      "output_sha256": {
+        "appendix.hwp": "bb80b56071b7c7f08a229ac50050f56a2f5e9dade4dd592148ddd43776cf9b9f",
+        "release.hwpx": "55c7e05f65a1e0f8544cdbbb5a9af34433bc1d03e28911b894b3e62da8288e97"
+      }
+    },
+    {
+      "round": 3,
+      "arm": "dll-preserve",
+      "elapsed_seconds": 0.3928598000002239,
+      "exit_codes": [
+        0
+      ],
+      "commands": [
+        [
+          "$PYTHON/python.exe",
+          "$BENCH/dll_batch.py",
+          "$TOOLS/unhwp-table-target/release/unhwp.dll",
+          "$WORK/inputs",
+          "$WORK/time-3-dll-preserve",
+          "4",
+          "--preserve-tables"
+        ]
+      ],
+      "output_sha256": {
+        "appendix.hwp": "8586ba961b71689384de6a2cdeecba927d6dbf6ca7ac9bede9850fa019930680",
+        "release.hwpx": "57e723b880d262adb29d4c4d5ecb4ebc3b1984d3de23a0d91670e1bbeb40a6e5"
+      }
+    },
+    {
+      "round": 4,
+      "arm": "unhwp-html",
+      "elapsed_seconds": 0.160162200000741,
+      "exit_codes": [
+        0,
+        0
+      ],
+      "commands": [
+        [
+          "$TOOLS/unhwp/unhwp.exe",
+          "markdown",
+          "--table-mode",
+          "html",
+          "--no-update-check",
+          "--cleanup",
+          "none",
+          "appendix.hwp",
+          "-o",
+          "$WORK/time-4-unhwp-html/appendix.hwp.md"
+        ],
+        [
+          "$TOOLS/unhwp/unhwp.exe",
+          "markdown",
+          "--table-mode",
+          "html",
+          "--no-update-check",
+          "--cleanup",
+          "none",
+          "release.hwpx",
+          "-o",
+          "$WORK/time-4-unhwp-html/release.hwpx.md"
+        ]
+      ],
+      "output_sha256": {
+        "appendix.hwp": "bb80b56071b7c7f08a229ac50050f56a2f5e9dade4dd592148ddd43776cf9b9f",
+        "release.hwpx": "55c7e05f65a1e0f8544cdbbb5a9af34433bc1d03e28911b894b3e62da8288e97"
+      }
+    },
+    {
+      "round": 4,
+      "arm": "hwp2md",
+      "elapsed_seconds": 0.08637700000053883,
+      "exit_codes": [
+        0
+      ],
+      "commands": [
+        [
+          "$TOOLS/hwp2md-target/release/hwp2md.exe",
+          "batch",
+          "$WORK/inputs",
+          "-o",
+          "$WORK/time-4-hwp2md"
+        ]
+      ],
+      "output_sha256": {
+        "appendix.hwp": "dce5184ca9b5b40e6a03af33e13468e94415f41144226fbb3173cd50b286c9d7",
+        "release.hwpx": "360be45c3dc736f124c8051b4bf9de876095beb76a9669a9b2b8c6bc73c2842c"
+      }
+    },
+    {
+      "round": 4,
+      "arm": "dll-html",
+      "elapsed_seconds": 0.3789958999996088,
+      "exit_codes": [
+        0
+      ],
+      "commands": [
+        [
+          "$PYTHON/python.exe",
+          "$BENCH/dll_batch.py",
+          "$TOOLS/ffi/unhwp.dll",
+          "$WORK/inputs",
+          "$WORK/time-4-dll-html",
+          "4",
+          "--merged-html"
+        ]
+      ],
+      "output_sha256": {
+        "appendix.hwp": "bb80b56071b7c7f08a229ac50050f56a2f5e9dade4dd592148ddd43776cf9b9f",
+        "release.hwpx": "55c7e05f65a1e0f8544cdbbb5a9af34433bc1d03e28911b894b3e62da8288e97"
+      }
+    },
+    {
+      "round": 4,
+      "arm": "dll-preserve",
+      "elapsed_seconds": 0.35579190000044036,
+      "exit_codes": [
+        0
+      ],
+      "commands": [
+        [
+          "$PYTHON/python.exe",
+          "$BENCH/dll_batch.py",
+          "$TOOLS/unhwp-table-target/release/unhwp.dll",
+          "$WORK/inputs",
+          "$WORK/time-4-dll-preserve",
+          "4",
+          "--preserve-tables"
+        ]
+      ],
+      "output_sha256": {
+        "appendix.hwp": "8586ba961b71689384de6a2cdeecba927d6dbf6ca7ac9bede9850fa019930680",
+        "release.hwpx": "57e723b880d262adb29d4c4d5ecb4ebc3b1984d3de23a0d91670e1bbeb40a6e5"
+      }
+    },
+    {
+      "round": 4,
+      "arm": "unhwp",
+      "elapsed_seconds": 0.1738699000006818,
+      "exit_codes": [
+        0,
+        0
+      ],
+      "commands": [
+        [
+          "$TOOLS/unhwp/unhwp.exe",
+          "markdown",
+          "--no-update-check",
+          "--cleanup",
+          "none",
+          "appendix.hwp",
+          "-o",
+          "$WORK/time-4-unhwp/appendix.hwp.md"
+        ],
+        [
+          "$TOOLS/unhwp/unhwp.exe",
+          "markdown",
+          "--no-update-check",
+          "--cleanup",
+          "none",
+          "release.hwpx",
+          "-o",
+          "$WORK/time-4-unhwp/release.hwpx.md"
+        ]
+      ],
+      "output_sha256": {
+        "appendix.hwp": "606c2dab1b3a5d121a0cba44f3a05a44638a63ee00fb4ec2c908ee891f76fd12",
+        "release.hwpx": "55c7e05f65a1e0f8544cdbbb5a9af34433bc1d03e28911b894b3e62da8288e97"
+      }
+    },
+    {
+      "round": 5,
+      "arm": "hwp2md",
+      "elapsed_seconds": 0.08221290000074077,
+      "exit_codes": [
+        0
+      ],
+      "commands": [
+        [
+          "$TOOLS/hwp2md-target/release/hwp2md.exe",
+          "batch",
+          "$WORK/inputs",
+          "-o",
+          "$WORK/time-5-hwp2md"
+        ]
+      ],
+      "output_sha256": {
+        "appendix.hwp": "dce5184ca9b5b40e6a03af33e13468e94415f41144226fbb3173cd50b286c9d7",
+        "release.hwpx": "360be45c3dc736f124c8051b4bf9de876095beb76a9669a9b2b8c6bc73c2842c"
+      }
+    },
+    {
+      "round": 5,
+      "arm": "dll-html",
+      "elapsed_seconds": 0.34649720000015805,
+      "exit_codes": [
+        0
+      ],
+      "commands": [
+        [
+          "$PYTHON/python.exe",
+          "$BENCH/dll_batch.py",
+          "$TOOLS/ffi/unhwp.dll",
+          "$WORK/inputs",
+          "$WORK/time-5-dll-html",
+          "4",
+          "--merged-html"
+        ]
+      ],
+      "output_sha256": {
+        "appendix.hwp": "bb80b56071b7c7f08a229ac50050f56a2f5e9dade4dd592148ddd43776cf9b9f",
+        "release.hwpx": "55c7e05f65a1e0f8544cdbbb5a9af34433bc1d03e28911b894b3e62da8288e97"
+      }
+    },
+    {
+      "round": 5,
+      "arm": "dll-preserve",
+      "elapsed_seconds": 0.3656700000001365,
+      "exit_codes": [
+        0
+      ],
+      "commands": [
+        [
+          "$PYTHON/python.exe",
+          "$BENCH/dll_batch.py",
+          "$TOOLS/unhwp-table-target/release/unhwp.dll",
+          "$WORK/inputs",
+          "$WORK/time-5-dll-preserve",
+          "4",
+          "--preserve-tables"
+        ]
+      ],
+      "output_sha256": {
+        "appendix.hwp": "8586ba961b71689384de6a2cdeecba927d6dbf6ca7ac9bede9850fa019930680",
+        "release.hwpx": "57e723b880d262adb29d4c4d5ecb4ebc3b1984d3de23a0d91670e1bbeb40a6e5"
+      }
+    },
+    {
+      "round": 5,
+      "arm": "unhwp",
+      "elapsed_seconds": 0.16881970000031288,
+      "exit_codes": [
+        0,
+        0
+      ],
+      "commands": [
+        [
+          "$TOOLS/unhwp/unhwp.exe",
+          "markdown",
+          "--no-update-check",
+          "--cleanup",
+          "none",
+          "appendix.hwp",
+          "-o",
+          "$WORK/time-5-unhwp/appendix.hwp.md"
+        ],
+        [
+          "$TOOLS/unhwp/unhwp.exe",
+          "markdown",
+          "--no-update-check",
+          "--cleanup",
+          "none",
+          "release.hwpx",
+          "-o",
+          "$WORK/time-5-unhwp/release.hwpx.md"
+        ]
+      ],
+      "output_sha256": {
+        "appendix.hwp": "606c2dab1b3a5d121a0cba44f3a05a44638a63ee00fb4ec2c908ee891f76fd12",
+        "release.hwpx": "55c7e05f65a1e0f8544cdbbb5a9af34433bc1d03e28911b894b3e62da8288e97"
+      }
+    },
+    {
+      "round": 5,
+      "arm": "unhwp-html",
+      "elapsed_seconds": 0.1824323999999251,
+      "exit_codes": [
+        0,
+        0
+      ],
+      "commands": [
+        [
+          "$TOOLS/unhwp/unhwp.exe",
+          "markdown",
+          "--table-mode",
+          "html",
+          "--no-update-check",
+          "--cleanup",
+          "none",
+          "appendix.hwp",
+          "-o",
+          "$WORK/time-5-unhwp-html/appendix.hwp.md"
+        ],
+        [
+          "$TOOLS/unhwp/unhwp.exe",
+          "markdown",
+          "--table-mode",
+          "html",
+          "--no-update-check",
+          "--cleanup",
+          "none",
+          "release.hwpx",
+          "-o",
+          "$WORK/time-5-unhwp-html/release.hwpx.md"
+        ]
+      ],
+      "output_sha256": {
+        "appendix.hwp": "bb80b56071b7c7f08a229ac50050f56a2f5e9dade4dd592148ddd43776cf9b9f",
+        "release.hwpx": "55c7e05f65a1e0f8544cdbbb5a9af34433bc1d03e28911b894b3e62da8288e97"
+      }
+    }
+  ]
+}

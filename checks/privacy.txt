@@ -1,0 +1,12 @@
+Public files: 58; decoded fixture components scanned: 126
+email: 0
+user directory or absolute local path: 0
+known private name or account identifier: 0
+sync path: 0
+host/disk/OS identifier: 0
+audit-only excerpt: 0
+superseded license status: 0
+unfinalized repository name in documentation: 0
+Scope: every public file name and content, including regenerated evidence and checksums.
+Synthetic inputs: container members and UTF-8/UTF-16LE patterns. The requested copyright notice is kept in NOTICE.
+Name screening covers locally known patterns.

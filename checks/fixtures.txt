@@ -1,0 +1,7 @@
+SHA-256 and size versus bench/fixtures/manifest.json
+OK 7ccad4a55140da6ce8e324a877c9ae4aa88e28491ef47fdb630f1b0a356a4e13  11264 bench/fixtures/body.hwp
+OK 3827d65b649753e216b0820f63baf4aa06bea871962dc3c067b515448b09957e   7532 bench/fixtures/body.hwpx
+OK 6062f6f8404fbe37f31f940f0547856aa030f0b2636e6e1737ef73f8d6a5fa5d  17920 bench/fixtures/long.hwp
+OK db88a455e712a0a7ad958ccc5767cc25e8ec6fa6be10abfa01a342ea367f587b  14624 bench/fixtures/long.hwpx
+OK 88e17ceec3f91e9eed7cf7f6f6fa728648d50bad7564cd53ea6b2bf504dd1ad5  11264 bench/fixtures/table.hwp
+OK b8b89485dce0dff9068d4993b219963b8a6a73c50ed61dd4126ce143db77a9be   8288 bench/fixtures/table.hwpx

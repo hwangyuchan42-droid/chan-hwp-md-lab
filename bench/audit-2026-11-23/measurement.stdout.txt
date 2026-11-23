@@ -1,0 +1,12 @@
+dll-html median 0.378996
+dll-preserve median 0.365670
+unhwp median 0.171801
+unhwp-html median 0.165235
+hwp2md median 0.086017
+dll-html {'review': {'appendix.hwp': (62, 386), 'release.hwpx': (2, 21)}, 'final': {'appendix.hwp': (102, 607), 'release.hwpx': (2, 21)}}
+dll-preserve {'review': {'appendix.hwp': (135, 386), 'release.hwpx': (5, 21)}, 'final': {'appendix.hwp': (197, 607), 'release.hwpx': (5, 21)}}
+unhwp {'review': {'appendix.hwp': (16, 386), 'release.hwpx': (2, 21)}, 'final': {'appendix.hwp': (23, 607), 'release.hwpx': (2, 21)}}
+unhwp-html {'review': {'appendix.hwp': (62, 386), 'release.hwpx': (2, 21)}, 'final': {'appendix.hwp': (102, 607), 'release.hwpx': (2, 21)}}
+hwp2md {'review': {'appendix.hwp': (0, 377), 'release.hwpx': (5, 28)}, 'final': {'appendix.hwp': (0, 595), 'release.hwpx': (5, 28)}}
+kordoc-4 {'review': {'appendix.hwp': (14, 82), 'release.hwpx': (3, 20)}, 'final': {'appendix.hwp': (17, 83), 'release.hwpx': (3, 20)}}
+kordoc-html {'review': {'appendix.hwp': (51, 82), 'release.hwpx': (3, 20)}, 'final': {'appendix.hwp': (87, 83), 'release.hwpx': (3, 20)}}

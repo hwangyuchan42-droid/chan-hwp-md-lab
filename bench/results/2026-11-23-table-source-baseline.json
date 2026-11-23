@@ -1,0 +1,28 @@
+{
+  "input_sha256": "3b73cc510033920112cf96a01dbd6124e9707fc37b710bbd5608df2d513dcce0",
+  "section_count_json": 2,
+  "skipped_sections_json": 0,
+  "table_counts": {
+    "source": 206,
+    "json": 197,
+    "markdown": 102
+  },
+  "source_geometry_matches": {
+    "source": 206,
+    "json": 197,
+    "markdown": 102
+  },
+  "targets": [
+    {
+      "source_table_ordinal": 108,
+      "rows": 24,
+      "columns": 24,
+      "cells": 313,
+      "matching_geometry": {
+        "source": 1,
+        "json": 0,
+        "markdown": 0
+      }
+    }
+  ]
+}

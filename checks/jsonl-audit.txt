@@ -1,0 +1,11 @@
+python -X utf8 .\checks\verify_jsonl.py '<pre-redaction ledger directory>'
+2026-11-22.jsonl
+  before SHA-256: b1767dbedfec5e25cf146f448ed1d243b4caf8c79369d96a463ff282830af94e
+  after  SHA-256: e70c86b33625bc4d7ed4d352ef9dcb2c837901ec7ff1778c3941973a772762be
+  deleted keys in row 1: logical_cpus, ram_bytes
+  JSON rows: 149; other JSON changes: 0; data lines changed: 0
+2026-11-23-mixed.jsonl
+  before SHA-256: 1fc448f2fa023666f5a47781546c5d17387e14655c878905c890eb1688ea706f
+  after  SHA-256: 8cb90e8b70e26cf3b65e3b37128914bdc5bdfd54b15ddd8b839a3f8dd3dfef7d
+  deleted keys in row 1: logical_cpus, ram_bytes
+  JSON rows: 37; other JSON changes: 0; data lines changed: 0

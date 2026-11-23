@@ -1,0 +1,19 @@
+Baseline windows and equal-quality head-to-head results from the public JSONL ledgers:
+hwp: dll-4 0.256863s vs unhwp 0.760397s, dll-4 wins 5/5, both 24/24 per run
+hwpx: dll-4 0.243584s vs hwp2md 0.084454s, dll-4 wins 0/5, both 24/24 per run
+long-hwp: dll-4 0.351076s vs hwp2md 0.100924s, dll-4 wins 0/5, both 8/8 per run
+long-hwpx: dll-4 0.447593s vs hwp2md 0.074741s, dll-4 wins 0/5, both 8/8 per run
+mixed-1000: dll-4 1.631739s vs kordoc-4 8.111052s, dll-4 wins 5/5, both 1000/1000 per run
+Initial mixed batch: 4 telemetry-only records, zero timed rounds; second ledger supplied all 5 timed rounds.
+hwp2md HWP: 24 outputs per round, 12 passes, median 0.137 seconds.
+hwp2md batch . -o out, synthetic table.hwp: exit 0; table=absent; third-row values in separate paragraphs; output SHA-256 27879ae296d5cf2e1af924b4bb3ad52d2b079e504fa7900eaff630ecfcdc493e
+hwp2md batch . -o out, synthetic table.hwpx: exit 0; table=present and cells match; output SHA-256 cb3c07b6393453d0e47b6f9befdbaddc6c2189b828731e27816c53777e1aabc7
+hwp2md exe SHA-256: 487bba0558f8fdd01ee48274bc386ff6771d90fa994a7148d74e2f1629ff7f7d
+2026-11-23-public-isolated.jsonl SHA-256 f3881dd6835669fd9fef858c3a3eb42a42bd65465935f58370d6fe2bbaefd5ca: dll-html 0.665214s, hwp2md 0.174953s
+2026-11-23-final-body.jsonl SHA-256 9cb695f7afeb4230a80bc86a85184c0bdd45d7abf71cccd27f50535f39b503ae: dll-html 0.293444s, hwp2md 0.073790s
+Historical sessions: the two tool hashes are unchanged; no within-session speedup is inferred from the two sessions.
+  ffi/unhwp.dll eac176371903f673073e34797f3be66608de805624dfae9b3479c3ebc99bfb5f
+  hwp2md-target/release/hwp2md.exe 487bba0558f8fdd01ee48274bc386ff6771d90fa994a7148d74e2f1629ff7f7d
+hwp2md: public HWPX tables 5/5; body 28/29
+dll-preserve: public HWPX tables 5/5; body 21/29
+git show 965e9a2c14e12ff939e27e42094c932b08656c22:src/hwp5/bodytext.rs, SHA-256 3ef36fc14eb6e25b21349d7d39f3d94eadb0f5d9579605338cfeb66e307394db: comment references HWP 5.0 specification. This is evidence of the underlying code reference only.

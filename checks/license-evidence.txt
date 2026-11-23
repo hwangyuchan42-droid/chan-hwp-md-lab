@@ -1,0 +1,14 @@
+2026-11-23  SHA-256 of LICENSE notices in versioned sources/distributions
+hashlib.sha256  d3f35f6b7df9b36287e75e9811881b24288726f2af92213c7fb5a965478f0496  unhwp 0.24.0  LICENSE
+hashlib.sha256  af5f2aced9ce13fa964a5ec9f7ab3271b139f10a1950f5c5408b7b3012369571  kordoc 4.25.3  LICENSE
+hashlib.sha256  230184f60bae2feaf244f10a8bac053c8ff33a183bcc365b4d8b876d2b7f4809  hwp2md 0.5.0  LICENSE
+hashlib.sha256  28e2e3f537e2950b9f05afb3f2fc2c69d85121258d4dbf124446ab25a7af8cd7  hwp2md 0.5.0 Cargo.toml  Cargo.toml
+hashlib.sha256  fee6f3e30bfe064913de5de0bbe42e1fb2467958ee458199a192bde5e36c0875  python-hwpx 7.0.0  LICENSE
+hashlib.sha256  e7c3ce8d76331b0101cc46790ab43958ea90a364bcf962ed8763d5a818340e69  lxml 6.1.3  LICENSE.txt
+hashlib.sha256  df682c668de65321677b5e4861dca4128a8bad8067f230956e9da3f985b3d398  lxml additional notices  LICENSES.txt
+hashlib.sha256  4a2260d6e2cd0f5a151a1e86dbfe7d3ed552b1e2beabf9941c1ba5c49cbce484  markdown-it-py 4.0.0  LICENSE
+hashlib.sha256  792c48c5a849a15fdf9e37e8bcf9e6d1dd13b32b46c642a748a0a46a9919d473  markdown-it-py original port notice  LICENSE.markdown-it
+hashlib.sha256  c7adc4d5d1337a548b967421f1fbe258b93033a0417708fd6f4e38f8ecbceb80  psutil 7.2.2  LICENSE
+hashlib.sha256  55b4d8d4b1e5bc86d10efac91b74c87bcb77526b0f5b9edaf8b9cd2adc7397b2  beautifulsoup4 4.14.3  LICENSE
+2026-11-23  Apache-2.0 official source https://www.apache.org/licenses/LICENSE-2.0.txt
+HTTP 200; body bytes 11358; SHA-256 cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30; saved as LICENSE without byte changes.

@@ -1,0 +1,8 @@
+python -X utf8 -m unittest discover -s bench -p test_table_audit.py -v
+test_empty_cell_rowspan_values_and_order (test_table_audit.TableAuditTest.test_empty_cell_rowspan_values_and_order) ... ok
+test_equivalent_gfm_and_html_in_mixed_markdown (test_table_audit.TableAuditTest.test_equivalent_gfm_and_html_in_mixed_markdown) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.008s
+
+OK

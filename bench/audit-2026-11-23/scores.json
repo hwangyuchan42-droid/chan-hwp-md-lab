@@ -1,0 +1,557 @@
+{
+  "inputs": {
+    "appendix.hwp": "3b73cc510033920112cf96a01dbd6124e9707fc37b710bbd5608df2d513dcce0",
+    "release.hwpx": "93ffd8fbe0a8bcdc5b96cbf9615c4cbb3e614980befccbca2642d2925441a207"
+  },
+  "runs": [
+    {
+      "arm": "dll-html",
+      "commands": [
+        [
+          "$PYTHON/python.exe",
+          "$BENCH/dll_batch.py",
+          "$TOOLS/ffi/unhwp.dll",
+          "$WORK/inputs",
+          "$WORK/quality-dll-html",
+          "4",
+          "--merged-html"
+        ]
+      ],
+      "exit_codes": [
+        0
+      ],
+      "sha256": {
+        "appendix.hwp": "bb80b56071b7c7f08a229ac50050f56a2f5e9dade4dd592148ddd43776cf9b9f",
+        "release.hwpx": "55c7e05f65a1e0f8544cdbbb5a9af34433bc1d03e28911b894b3e62da8288e97"
+      },
+      "sizes": {
+        "appendix.hwp": {
+          "bytes": 297990,
+          "html_tables": 79,
+          "html_table_block_bytes": 209899,
+          "html_table_block_percent": 70.43827
+        },
+        "release.hwpx": {
+          "bytes": 6091,
+          "html_tables": 0,
+          "html_table_block_bytes": 0,
+          "html_table_block_percent": 0.0
+        }
+      },
+      "grades": {
+        "review": {
+          "appendix.hwp": {
+            "output_tables": 102,
+            "table_geometry": 102,
+            "table_values_and_geometry": 62,
+            "merged_values_and_geometry": 46,
+            "all_tables_in_order": false,
+            "ordered_body_texts": 386
+          },
+          "release.hwpx": {
+            "output_tables": 2,
+            "table_geometry": 2,
+            "table_values_and_geometry": 2,
+            "merged_values_and_geometry": 0,
+            "all_tables_in_order": false,
+            "ordered_body_texts": 21
+          }
+        },
+        "final": {
+          "appendix.hwp": {
+            "output_tables": 102,
+            "table_geometry": 102,
+            "table_values_and_geometry": 102,
+            "merged_values_and_geometry": 79,
+            "all_tables_in_order": false,
+            "ordered_body_texts": 607
+          },
+          "release.hwpx": {
+            "output_tables": 2,
+            "table_geometry": 2,
+            "table_values_and_geometry": 2,
+            "merged_values_and_geometry": 0,
+            "all_tables_in_order": false,
+            "ordered_body_texts": 21
+          }
+        }
+      }
+    },
+    {
+      "arm": "dll-preserve",
+      "commands": [
+        [
+          "$PYTHON/python.exe",
+          "$BENCH/dll_batch.py",
+          "$TOOLS/unhwp-table-target/release/unhwp.dll",
+          "$WORK/inputs",
+          "$WORK/quality-dll-preserve",
+          "4",
+          "--preserve-tables"
+        ]
+      ],
+      "exit_codes": [
+        0
+      ],
+      "sha256": {
+        "appendix.hwp": "8586ba961b71689384de6a2cdeecba927d6dbf6ca7ac9bede9850fa019930680",
+        "release.hwpx": "57e723b880d262adb29d4c4d5ecb4ebc3b1984d3de23a0d91670e1bbeb40a6e5"
+      },
+      "sizes": {
+        "appendix.hwp": {
+          "bytes": 307379,
+          "html_tables": 197,
+          "html_table_block_bytes": 236240,
+          "html_table_block_percent": 76.856259
+        },
+        "release.hwpx": {
+          "bytes": 6673,
+          "html_tables": 5,
+          "html_table_block_bytes": 1878,
+          "html_table_block_percent": 28.143264
+        }
+      },
+      "grades": {
+        "review": {
+          "appendix.hwp": {
+            "output_tables": 197,
+            "table_geometry": 197,
+            "table_values_and_geometry": 135,
+            "merged_values_and_geometry": 46,
+            "all_tables_in_order": false,
+            "ordered_body_texts": 386
+          },
+          "release.hwpx": {
+            "output_tables": 5,
+            "table_geometry": 5,
+            "table_values_and_geometry": 5,
+            "merged_values_and_geometry": 0,
+            "all_tables_in_order": true,
+            "ordered_body_texts": 21
+          }
+        },
+        "final": {
+          "appendix.hwp": {
+            "output_tables": 197,
+            "table_geometry": 197,
+            "table_values_and_geometry": 197,
+            "merged_values_and_geometry": 79,
+            "all_tables_in_order": true,
+            "ordered_body_texts": 607
+          },
+          "release.hwpx": {
+            "output_tables": 5,
+            "table_geometry": 5,
+            "table_values_and_geometry": 5,
+            "merged_values_and_geometry": 0,
+            "all_tables_in_order": true,
+            "ordered_body_texts": 21
+          }
+        }
+      }
+    },
+    {
+      "arm": "unhwp",
+      "commands": [
+        [
+          "$TOOLS/unhwp/unhwp.exe",
+          "markdown",
+          "--no-update-check",
+          "--cleanup",
+          "none",
+          "appendix.hwp",
+          "-o",
+          "$WORK/quality-unhwp/appendix.hwp.md"
+        ],
+        [
+          "$TOOLS/unhwp/unhwp.exe",
+          "markdown",
+          "--no-update-check",
+          "--cleanup",
+          "none",
+          "release.hwpx",
+          "-o",
+          "$WORK/quality-unhwp/release.hwpx.md"
+        ]
+      ],
+      "exit_codes": [
+        0,
+        0
+      ],
+      "sha256": {
+        "appendix.hwp": "606c2dab1b3a5d121a0cba44f3a05a44638a63ee00fb4ec2c908ee891f76fd12",
+        "release.hwpx": "55c7e05f65a1e0f8544cdbbb5a9af34433bc1d03e28911b894b3e62da8288e97"
+      },
+      "sizes": {
+        "appendix.hwp": {
+          "bytes": 176936,
+          "html_tables": 0,
+          "html_table_block_bytes": 0,
+          "html_table_block_percent": 0.0
+        },
+        "release.hwpx": {
+          "bytes": 6091,
+          "html_tables": 0,
+          "html_table_block_bytes": 0,
+          "html_table_block_percent": 0.0
+        }
+      },
+      "grades": {
+        "review": {
+          "appendix.hwp": {
+            "output_tables": 102,
+            "table_geometry": 23,
+            "table_values_and_geometry": 16,
+            "merged_values_and_geometry": 0,
+            "all_tables_in_order": false,
+            "ordered_body_texts": 386
+          },
+          "release.hwpx": {
+            "output_tables": 2,
+            "table_geometry": 2,
+            "table_values_and_geometry": 2,
+            "merged_values_and_geometry": 0,
+            "all_tables_in_order": false,
+            "ordered_body_texts": 21
+          }
+        },
+        "final": {
+          "appendix.hwp": {
+            "output_tables": 102,
+            "table_geometry": 23,
+            "table_values_and_geometry": 23,
+            "merged_values_and_geometry": 0,
+            "all_tables_in_order": false,
+            "ordered_body_texts": 607
+          },
+          "release.hwpx": {
+            "output_tables": 2,
+            "table_geometry": 2,
+            "table_values_and_geometry": 2,
+            "merged_values_and_geometry": 0,
+            "all_tables_in_order": false,
+            "ordered_body_texts": 21
+          }
+        }
+      }
+    },
+    {
+      "arm": "unhwp-html",
+      "commands": [
+        [
+          "$TOOLS/unhwp/unhwp.exe",
+          "markdown",
+          "--table-mode",
+          "html",
+          "--no-update-check",
+          "--cleanup",
+          "none",
+          "appendix.hwp",
+          "-o",
+          "$WORK/quality-unhwp-html/appendix.hwp.md"
+        ],
+        [
+          "$TOOLS/unhwp/unhwp.exe",
+          "markdown",
+          "--table-mode",
+          "html",
+          "--no-update-check",
+          "--cleanup",
+          "none",
+          "release.hwpx",
+          "-o",
+          "$WORK/quality-unhwp-html/release.hwpx.md"
+        ]
+      ],
+      "exit_codes": [
+        0,
+        0
+      ],
+      "sha256": {
+        "appendix.hwp": "bb80b56071b7c7f08a229ac50050f56a2f5e9dade4dd592148ddd43776cf9b9f",
+        "release.hwpx": "55c7e05f65a1e0f8544cdbbb5a9af34433bc1d03e28911b894b3e62da8288e97"
+      },
+      "sizes": {
+        "appendix.hwp": {
+          "bytes": 297990,
+          "html_tables": 79,
+          "html_table_block_bytes": 209899,
+          "html_table_block_percent": 70.43827
+        },
+        "release.hwpx": {
+          "bytes": 6091,
+          "html_tables": 0,
+          "html_table_block_bytes": 0,
+          "html_table_block_percent": 0.0
+        }
+      },
+      "grades": {
+        "review": {
+          "appendix.hwp": {
+            "output_tables": 102,
+            "table_geometry": 102,
+            "table_values_and_geometry": 62,
+            "merged_values_and_geometry": 46,
+            "all_tables_in_order": false,
+            "ordered_body_texts": 386
+          },
+          "release.hwpx": {
+            "output_tables": 2,
+            "table_geometry": 2,
+            "table_values_and_geometry": 2,
+            "merged_values_and_geometry": 0,
+            "all_tables_in_order": false,
+            "ordered_body_texts": 21
+          }
+        },
+        "final": {
+          "appendix.hwp": {
+            "output_tables": 102,
+            "table_geometry": 102,
+            "table_values_and_geometry": 102,
+            "merged_values_and_geometry": 79,
+            "all_tables_in_order": false,
+            "ordered_body_texts": 607
+          },
+          "release.hwpx": {
+            "output_tables": 2,
+            "table_geometry": 2,
+            "table_values_and_geometry": 2,
+            "merged_values_and_geometry": 0,
+            "all_tables_in_order": false,
+            "ordered_body_texts": 21
+          }
+        }
+      }
+    },
+    {
+      "arm": "hwp2md",
+      "commands": [
+        [
+          "$TOOLS/hwp2md-target/release/hwp2md.exe",
+          "batch",
+          "$WORK/inputs",
+          "-o",
+          "$WORK/quality-hwp2md"
+        ]
+      ],
+      "exit_codes": [
+        0
+      ],
+      "sha256": {
+        "appendix.hwp": "dce5184ca9b5b40e6a03af33e13468e94415f41144226fbb3173cd50b286c9d7",
+        "release.hwpx": "360be45c3dc736f124c8051b4bf9de876095beb76a9669a9b2b8c6bc73c2842c"
+      },
+      "sizes": {
+        "appendix.hwp": {
+          "bytes": 185036,
+          "html_tables": 0,
+          "html_table_block_bytes": 0,
+          "html_table_block_percent": 0.0
+        },
+        "release.hwpx": {
+          "bytes": 5817,
+          "html_tables": 0,
+          "html_table_block_bytes": 0,
+          "html_table_block_percent": 0.0
+        }
+      },
+      "grades": {
+        "review": {
+          "appendix.hwp": {
+            "output_tables": 0,
+            "table_geometry": 0,
+            "table_values_and_geometry": 0,
+            "merged_values_and_geometry": 0,
+            "all_tables_in_order": false,
+            "ordered_body_texts": 377
+          },
+          "release.hwpx": {
+            "output_tables": 5,
+            "table_geometry": 5,
+            "table_values_and_geometry": 5,
+            "merged_values_and_geometry": 0,
+            "all_tables_in_order": true,
+            "ordered_body_texts": 28
+          }
+        },
+        "final": {
+          "appendix.hwp": {
+            "output_tables": 0,
+            "table_geometry": 0,
+            "table_values_and_geometry": 0,
+            "merged_values_and_geometry": 0,
+            "all_tables_in_order": false,
+            "ordered_body_texts": 595
+          },
+          "release.hwpx": {
+            "output_tables": 5,
+            "table_geometry": 5,
+            "table_values_and_geometry": 5,
+            "merged_values_and_geometry": 0,
+            "all_tables_in_order": true,
+            "ordered_body_texts": 28
+          }
+        }
+      }
+    },
+    {
+      "arm": "kordoc-4",
+      "commands": [
+        [
+          "node",
+          "$TOOLS/node_modules/kordoc/dist/cli.js",
+          "--format",
+          "markdown",
+          "--table-format",
+          "gfm",
+          "--no-images",
+          "--jobs",
+          "4",
+          "-d",
+          "$WORK/quality-kordoc-4",
+          "appendix.hwp",
+          "release.hwpx"
+        ]
+      ],
+      "exit_codes": [
+        0
+      ],
+      "sha256": {
+        "appendix.hwp": "7ee46fce49761c94c79724b03a493460bfac66dbaaa0a60179d245d30f2e760b",
+        "release.hwpx": "8b0b5266d2e8488430fd22de6de91b7bfebafe21af23ca0d4ec311f827dafba0"
+      },
+      "sizes": {
+        "appendix.hwp": {
+          "bytes": 177171,
+          "html_tables": 0,
+          "html_table_block_bytes": 0,
+          "html_table_block_percent": 0.0
+        },
+        "release.hwpx": {
+          "bytes": 5988,
+          "html_tables": 0,
+          "html_table_block_bytes": 0,
+          "html_table_block_percent": 0.0
+        }
+      },
+      "grades": {
+        "review": {
+          "appendix.hwp": {
+            "output_tables": 94,
+            "table_geometry": 17,
+            "table_values_and_geometry": 14,
+            "merged_values_and_geometry": 0,
+            "all_tables_in_order": false,
+            "ordered_body_texts": 82
+          },
+          "release.hwpx": {
+            "output_tables": 3,
+            "table_geometry": 3,
+            "table_values_and_geometry": 3,
+            "merged_values_and_geometry": 0,
+            "all_tables_in_order": false,
+            "ordered_body_texts": 20
+          }
+        },
+        "final": {
+          "appendix.hwp": {
+            "output_tables": 94,
+            "table_geometry": 17,
+            "table_values_and_geometry": 17,
+            "merged_values_and_geometry": 0,
+            "all_tables_in_order": false,
+            "ordered_body_texts": 83
+          },
+          "release.hwpx": {
+            "output_tables": 3,
+            "table_geometry": 3,
+            "table_values_and_geometry": 3,
+            "merged_values_and_geometry": 0,
+            "all_tables_in_order": false,
+            "ordered_body_texts": 20
+          }
+        }
+      }
+    },
+    {
+      "arm": "kordoc-html",
+      "commands": [
+        [
+          "node",
+          "$TOOLS/node_modules/kordoc/dist/cli.js",
+          "--format",
+          "markdown",
+          "--html-tables",
+          "--keep-layout-tables",
+          "--no-images",
+          "--jobs",
+          "4",
+          "-d",
+          "$WORK/quality-kordoc-html",
+          "appendix.hwp",
+          "release.hwpx"
+        ]
+      ],
+      "exit_codes": [
+        0
+      ],
+      "sha256": {
+        "appendix.hwp": "1745199236853659546c5ca870d4dd047d4fe4c3e57576b82676bec6dba5ee43",
+        "release.hwpx": "85731a816d0cfec6e49dbfd975e7a7df80b4c979c5711d4c80ad6b91874e7687"
+      },
+      "sizes": {
+        "appendix.hwp": {
+          "bytes": 341136,
+          "html_tables": 111,
+          "html_table_block_bytes": 262428,
+          "html_table_block_percent": 76.927677
+        },
+        "release.hwpx": {
+          "bytes": 6757,
+          "html_tables": 4,
+          "html_table_block_bytes": 1458,
+          "html_table_block_percent": 21.577623
+        }
+      },
+      "grades": {
+        "review": {
+          "appendix.hwp": {
+            "output_tables": 111,
+            "table_geometry": 103,
+            "table_values_and_geometry": 51,
+            "merged_values_and_geometry": 37,
+            "all_tables_in_order": false,
+            "ordered_body_texts": 82
+          },
+          "release.hwpx": {
+            "output_tables": 4,
+            "table_geometry": 4,
+            "table_values_and_geometry": 3,
+            "merged_values_and_geometry": 0,
+            "all_tables_in_order": false,
+            "ordered_body_texts": 20
+          }
+        },
+        "final": {
+          "appendix.hwp": {
+            "output_tables": 111,
+            "table_geometry": 103,
+            "table_values_and_geometry": 87,
+            "merged_values_and_geometry": 69,
+            "all_tables_in_order": false,
+            "ordered_body_texts": 83
+          },
+          "release.hwpx": {
+            "output_tables": 4,
+            "table_geometry": 4,
+            "table_values_and_geometry": 3,
+            "merged_values_and_geometry": 0,
+            "all_tables_in_order": false,
+            "ordered_body_texts": 20
+          }
+        }
+      }
+    }
+  ]
+}
