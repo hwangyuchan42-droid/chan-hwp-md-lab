@@ -1,0 +1,8 @@
+python -B -X utf8 <local staging checker>
+Aggregate check against public JSON. No source text was used.
+hwp: expected=749 matched=607 mismatches=142 notation=142 missing=0 full-line-unique=142 LCS=749/749 inversions=0
+34b4f4b95cffead6c5a20fc21f33e59c4a6b11a521349dbdd7cf4a566999c8b5  hwp-dll-preserve.json
+hwpx: expected=29 matched=21 mismatches=8 notation=8 missing=0 full-line-unique=8 LCS=29/29 inversions=0
+e2fd612272f2bb0539614a3618158c20da070cd8a0588ffd2ecb94b03dff4cde  hwpx-dll-preserve.json
+cc09231d105a2ae41f0a423b9b45c9814aa2023de34bbc9e64af13ff3dac61c6  summary.json
+40be4226ad0aeabed5980894cbe6ee84dae5421c1c6efd1eb068203368186461  addendum-evidence.json

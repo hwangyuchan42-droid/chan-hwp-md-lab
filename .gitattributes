@@ -1,0 +1,8 @@
+* text=auto eol=lf
+*.hwp binary
+*.hwpx binary
+bench/fixtures/manifest.json -text
+bench/results/*.json -text
+bench/results/*.jsonl -text
+bench/results/summary.md -text
+bench/audit-2026-11-23/*.stdout.txt -text

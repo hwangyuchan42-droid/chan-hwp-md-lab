@@ -1,0 +1,52 @@
+{
+  "appendix.hwp": {
+    "source_sha256": "3b73cc510033920112cf96a01dbd6124e9707fc37b710bbd5608df2d513dcce0",
+    "reference_count": 749,
+    "dll_preserve": {
+      "bytes": 307379,
+      "sha256": "8586ba961b71689384de6a2cdeecba927d6dbf6ca7ac9bede9850fa019930680",
+      "stdout_terminator_bytes_removed": 0,
+      "matched": 607,
+      "raw_equal": 273,
+      "normalization_required": 334,
+      "counts": {
+        "a": 142,
+        "b": 0,
+        "c": 0,
+        "d": 0,
+        "e": 0
+      },
+      "rules": {
+        "list_marker": 137,
+        "list_and_markup": 2,
+        "literal_markup": 3
+      },
+      "d_objects": {}
+    }
+  },
+  "release.hwpx": {
+    "source_sha256": "93ffd8fbe0a8bcdc5b96cbf9615c4cbb3e614980befccbca2642d2925441a207",
+    "reference_count": 29,
+    "dll_preserve": {
+      "bytes": 6673,
+      "sha256": "57e723b880d262adb29d4c4d5ecb4ebc3b1984d3de23a0d91670e1bbeb40a6e5",
+      "stdout_terminator_bytes_removed": 0,
+      "matched": 21,
+      "raw_equal": 1,
+      "normalization_required": 20,
+      "counts": {
+        "a": 8,
+        "b": 0,
+        "c": 0,
+        "d": 0,
+        "e": 0
+      },
+      "rules": {
+        "list_marker": 6,
+        "literal_markup": 1,
+        "list_and_markup": 1
+      },
+      "d_objects": {}
+    }
+  }
+}

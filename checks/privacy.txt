@@ -1,12 +1,12 @@
-Public files: 58; decoded fixture components scanned: 126
+Public files scanned: 66; decoded fixture surfaces: 66.
 email: 0
-user directory or absolute local path: 0
-known private name or account identifier: 0
+personal name or account: 0
+absolute private path: 0
 sync path: 0
-host/disk/OS identifier: 0
-audit-only excerpt: 0
-superseded license status: 0
-unfinalized repository name in documentation: 0
-Scope: every public file name and content, including regenerated evidence and checksums.
-Synthetic inputs: container members and UTF-8/UTF-16LE patterns. The requested copyright notice is kept in NOTICE.
-Name screening covers locally known patterns.
+government official name: 0
+device identifiers: 0
+withheld diagnosis wording: 0
+audit-only excerpt (table 108): 0
+withheld source or local-only filename: 0
+Coverage includes names and content of every package file, decoded ZIP/CFB streams and the two locally recorded table-neighbour excerpts.
+Name and account checks cover known identifiers and Korean public-title patterns.
